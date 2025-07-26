@@ -1,0 +1,18 @@
+void Level_trav(Tree_type ){
+ Tree_type* temp;
+ queue<Tree_type> q1;
+ q1.push(root);
+ while(!q1.empty())
+ {
+  temp=q1.top();
+  q1.pop();
+  if(temp->left)
+  {
+    q1.push(root->left);
+  }
+  if(temp->right)
+  {
+    q1.push(root->right);
+  }
+ }
+}
